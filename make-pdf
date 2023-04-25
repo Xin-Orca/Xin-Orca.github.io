@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# Format 4:3
+#htmltopdf="wkhtmltopdf -l --use-xserver --no-print-media-type --page-width 169.5 --page-height 127.0 -B 0 -L 0 -R 0 -T 0"
+
+# Format 16:10
+htmltopdf="wkhtmltopdf -l --enable-local-file-access --use-xserver --no-print-media-type --page-width 203.2 --page-height 127.0 -B 0 -L 0 -R 0 -T 0"
+
+slides=31
+#slides=4
+
+
+
+DIR=`readlink -f "$0"`
+DIR=`dirname "$DIR"`
+FILE="DPG22.html"
+
+# remove video commands
+sed s/anim-play/anim-show/ "${FILE}" > slides.html
+
+
+SRC="file://$DIR/slides.html"
+N=0
+while [  $N -le $slides ]; do
+    M=`printf "%04i" $N`
+    $htmltopdf "${SRC}#slide-$N" "slide-${M}.pdf"
+#    SLIDES="$SLIDES ${SRC}#slide-$N"
+    let N=N+1 
+done
+
+#echo "$SLIDES" "slide-${M}.pdf"
+#$htmltopdf ${SLIDES} "slidesa.pdf"
+
+pdfunite slide-*.pdf DPG22.pdf
+rm -f slide-*.pdf
+rm -f slides.html

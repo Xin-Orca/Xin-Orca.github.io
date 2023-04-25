@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <!-- PROVIDE METADATA -->
+        <!-- ================ -->
+        <title>Supplementary for Poster</title>
+        <meta name="author" content="XXX" >
+
+               <!-- Required stylesheet -->
+        <link rel="stylesheet" href="deck.js/core/deck.core.css">
+        <script src="deck.js/modernizr.custom.js"></script>
+        <script src="deck.js/jquery.min.js"></script>
+        <script src="deck.js/core/deck.core.js"></script>
+
+        <!-- Transition, for your audience, use it only for short presentations, see deck.js/themes/transition -->
+        <!-- 	<link rel="stylesheet" href="deck.js/themes/transition/fade.css"> -->
+
+        <!-- Style theme. -->
+        <link rel="stylesheet" href="deck.js/themes/style/fzj/fzj.css">
+
+        <!-- PROVIDE EXTENSIONS: JS and CSS files -->
+        <!-- ============================ -->
+        <!-- proper slide scaling (type 's' to disable) -->
+        <script src="deck.js/extensions/fit/deck.fit.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/fit/deck.fit-fs.css"> <!-- fit to window -->
+        <!-- smart syntax -->
+        <script src="deck.js/extensions/smartsyntax/deck.smartsyntax.js"></script>
+        <!-- math equations -->
+        <script src="deck.js/libs/display-latex2.user.js"></script>
+        <script src="deck.js/extensions/simplemath/deck.simplemath.js"></script>
+        <!-- clone by typing 'c'   (popups a slave presentation) (uses "clone snippet" at the end of the page) -->
+        <link rel="stylesheet" href="deck.js/extensions/clone/deck.clone.css">
+        <script src="deck.js/extensions/clone/deck.clone.js"></script>
+	       <!-- timekeeper -->
+        <link rel="stylesheet" href="deck.js/extensions/timekeeper/deck.timekeeper.css">
+        <script src="deck.js/extensions/timekeeper/deck.timekeeper.js"></script>
+        <!-- goto by typing 'g'   (uses "goto snippet" at the end of the page) -->
+	      <link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+        <script src="deck.js/extensions/goto/deck.goto.js"></script>
+        <!-- animations, svg etc (better to include it after the 'status' extension... so see below) -->
+
+        <!-- slide number indicator   (uses "status snippet" at the end of the page) -->
+        <link rel="stylesheet" href="deck.js/extensions/progress/deck.progress.css">
+        <script src="deck.js/extensions/progress/deck.progress.js"></script>
+
+        <!-- navigation buttons   (uses "navigation snippet" at the end of the page) -->
+	     <link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+        <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+        <!-- slide selector by typing 'm' -->
+        <script src="deck.js/extensions/menu/deck.menu.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+
+        <!-- animations, svg etc (better to include it after the 'status' extension (to avoid huge fake slide numbers) -->
+        <script src="deck.js/extensions/step/deck.step.js"></script>
+        <script src="deck.js/extensions/events/deck.events.js"></script>
+        <script src="deck.js/extensions/anim/deck.anim.js"></script>
+        <script src="deck.js/libs/jquerysvg/jquery.svg.min.js"></script>
+        <script src="deck.js/libs/jquerysvg/jquery.svganim.min.js"></script>
+        <script src="deck.js/extensions/svg/deck.svg.js"></script>
+        <script src="deck.js/extensions/metadata/deck.metadata.js"></script>
+
+        <!-- slide printing by typing 'p' -->
+        <script src="deck.js/extensions/print/deck.print.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/print/deck.print.css">
+
+
+        <!-- Deck.js options (advanced) -->
+
+        <script>
+            var slidesTotal=34;
+
+            $(function() {
+                $.deck('.slide', {
+                    //fitMarginX:100, fitMarginY:100, // uncomment to tune margin
+                    //fitMode: "stretched", // uncomment to strech
+                    //designWidth: 800,
+                    designWidth: 960,
+                    designHeight: 600,
+                    snippets: {clone: false },
+                    dummy:""
+                });
+            });
+            $(document).ready(function(){
+                $("section[class~='slide']").not(".title-slide, .no-footbar").append(
+                "<div class='footbar'>\
+                    <span style='position:absolute;left:5%'>Thursday, Jan 7, 2021</span>\
+                    <span>736. WE Heraeus-Seminar. Poster 39.</span>\
+                    <span style='position:absolute;right:1%'> <span class='deck-status-current'/> / <span class='deck-status-total'/> </span>\
+                </div>");
+            });
+        </script>
+
+		<style>
+			#figtable {
+				caption-side: bottom;
+				text-align: center;
+				border-collapse: collapse;
+				}
+
+			table, th, td {
+				border: 1px solid black;
+				}
+		</style>
+</head>
+    </head>
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------->
+
+
+
+
+<body>
+<!-- This text should not be displayed if everything goes well: use left/right arrow keys to browse the presentation.<br/> -->
+
+<div class="deck-container">
+
+<section class="slide title-slide">
+
+    <h1>
+        Supplementary for Poster 39.<br />
+    </h1>
+    <div class="authors" style="width:100%;position:absolute;top:50%;">
+        Xin Liang Tan<sup>1</sup>, Kenta Hagiwara<sup>1</sup>, Ying-Jiun Chen<sup>1,2</sup>, Jakub Schusser<sup>3</sup>, Iulia Cojocariu<sup>1</sup>,<br> Vitaliy Feyer<sup>1</sup>, J&aacute;n Min&aacute;r<sup>3</sup>, Claus M. Schneider<sup>1,2,4</sup>, and Christian Tusche<sup>1,2</sup>
+    </div>
+    <div class="affiliations">
+      <sup>1</sup>
+            Forschungszentrum Jülich, Peter Grünberg Institut, Jülich<br>
+      <sup>2</sup>
+            Fakultät für Physik, Universität Duisburg-Essen, Duisburg<br>
+      <sup>3</sup>
+            New Technologies Research Centre, University of West Bohemia, Pilsen, Czech Republic<br>
+      <sup>4</sup>
+            Department of Physics, University of California Davis, Davis, USA<br>
+    </div>
+
+    <!--<img style="height:140px;position:absolute;left:25px;top:28px" src=Bilder/Titelbilder/APL_108_Cover_white.png>-->
+    <!-- <img style="height:170px;position:absolute;left:460px;top:15px" src=Bilder/Titelbilder/Bi<sub>2</sub>Se<sub>3</sub>_Dirac_spol.png>
+    <img style="height:160px;position:absolute;left:330px;top:28px" src=Bilder/Titelbilder/fct_Co_Fermisurface_3.png>
+    <img style="height:130px;width:230px;position:absolute;left:50px;top:30px" src=Bilder/Titelbilder/spinfilter_3d.png>
+
+    <img style="height:50px;position:absolute;right:50px;top:120px" src=Logos/Uni-DUE.png>-->
+
+
+</section>
+
+<section class="slide">
+	<h2>The Thinnest Known Half Metallic System</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/FePd2.png" style="height:330px"></img>
+    </figure>
+</section>
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!--
+<section class="slide">
+	<h2>Electronic Structure of Solids</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es1.png" style="height:360px"></img>
+    </figure>
+
+	  <img class="es2" style="position:absolute;left:5%;height:360px" src=Bilder/Electronic_structure_of_solids/es2.png>
+	  <img class="es3" style="position:absolute;left:5%;height:360px" src=Bilder/Electronic_structure_of_solids/es3.png>
+	  <img class="es4" style="position:absolute;left:5%;height:360px" src=Bilder/Electronic_structure_of_solids/es4.png>
+
+    <div class="es2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="es3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="es4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".es2"></div>
+    <div class="anim-show slide" data-what=".es3"></div>
+    <div class="anim-show slide" data-what=".es4"></div>
+
+</section>
+
+
+<section class="slide">
+	<h2>Electronic Structure of Solids</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es5.png" style="height:360px"></img>
+    </figure>
+
+	  <img class="es6" style="position:absolute;left:5%;height:360px" src=Bilder/Electronic_structure_of_solids/es6.png>
+
+    <div class="es6" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".es6"></div>
+
+</section>
+-->
+
+<section class="slide">
+	<h2>Fermi Surface</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es7.png" style="height:360px"></img>
+    </figure>
+</section>
+<!--
+<section class="slide">
+	<h2>Fermi Surface</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es9.png" style="height:360px"></img>
+    </figure>
+</section>
+-->
+<section class="slide">
+	<h2>Calculated Fermi Surface of Pd(100) (LDA+U)</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Pd_FS/Pd_FS_LDA+U_Vf0.65_Wbg.png" style="height:380px"></img>
+    </figure>
+    <figure style="position:absolute;right:10%;">
+       <img src="Bilder/Pd_FS/fcc.png" style="height:300px"></img>
+    </figure>
+    <figure style="position:absolute;right:50%;">
+       <img src="Bilder/Pd_FS/exciting.png" style="height:50px"></img>
+    </figure>
+</section>
+
+<!--
+<section class="slide">
+	<h2>Periodic Table of Elements</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Periodic_table/ptable1.png" style="height:380px"></img>
+    </figure>
+
+	  <img class="ptable2" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable2.png>
+	  <img class="ptable3" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable3.png>
+	  <img class="ptable5" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable5.png>
+	  <img class="ptable7" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable7.png>
+
+    <div class="ptable2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable5" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable7" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".ptable2"></div>
+    <div class="anim-show slide" data-what=".ptable3"></div>
+    <div class="anim-show slide" data-what=".ptable5"></div>
+    <div class="anim-show slide" data-what=".ptable7"></div>
+
+</section>
+-->
+<!--
+<section class="slide">
+	<h2>Energy Bands of Ferromagnets</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/fm1.png" style="height:350px"></img>
+    </figure>
+    <img class="fm2" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/fm2.png>
+
+    <div class="fm2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="anim-show slide" data-what=".fm2"></div>
+</section>
+
+
+
+<section class="slide">
+	<h2>Energy Bands of Hybrid Ferromagnet</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/hybrid1.png" style="height:350px"></img>
+    </figure>
+    <img class="hybrid2" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid2.png>
+    <img class="hybrid3" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid3.png>
+    <img class="hybrid4" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid4.png>
+
+    <div class="hybrid2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="hybrid3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="hybrid4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="anim-show slide" data-what=".hybrid2"></div>
+    <div class="anim-show slide" data-what=".hybrid3"></div>
+    <div class="anim-show slide" data-what=".hybrid4"></div>
+</section>
+
+
+<section class="slide">
+	<h2>The Thinnest Known Half Metallic System</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/FePd.png" style="height:330px"></img>
+    </figure>
+    <img class="FePd2" style="position:absolute;left:5%;height:330px" src=Bilder/Electronic_structure_of_solids/FePd2.png>
+    <div class="FePd2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".FePd2"></div>
+</section>
+-->
+
+
+<section class="slide">
+	<h2>The Momentum Microscope</h2>
+	  <img style="position:absolute;left:10%;height:350px"src=Bilder/Momentum_Microscope/Momentum_Microscope_klein.png>
+    <img style="position:absolute;right:10%;height:400px" src=Bilder/Momentum_Microscope/NanoESCA.png>
+    <img style="position:absolute;right:50%;height:80px;top:70%" src=Bilder/nanoesca.png>
+    <span class="kt2" style='color:#0000ff;font-size:20px;position:absolute;right:18%;top:20%'> NanoESCA beamline, Elettra</span>
+    <span style='color:#000000;font-size:15px;position:absolute;left:10%;top:85%'>Adapted from Tusche, C.; Krasyuk, A. & Kirschner, <br>J.​ Ultramicroscopy , Vol. 159 , pp. 520-529 , 2015​</span>
+    <img class="mm2" style="position:absolute;right:10%;height:400px" src=Bilder/Momentum_Microscope/NanoESCA_BG.png>
+    <img class="mm2" style="position:absolute;right:5%;top:34%;height:280px" src=Bilder/Momentum_Microscope/KPEEM.png>
+    <div class="mm2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="anim-show slide" data-what=".mm2"></div>
+
+</section>
+
+<!--
+<section class="slide">
+	<h2>k-space Tomography</h2>
+    <figure style="position:absolute;left:10%;top:25%">
+	     <img src="Bilder/k_tomography/k_tomo2.PNG" style="height:375px"></img>
+    </figure>
+    <img class="kt2" style="position:absolute;left:10%;height:380px;top:24%" src=Bilder/k_tomography/k_tomo.PNG>
+    <span class="kt2" style='color:#000000;font-size:25px;position:absolute;right:10%;top:80%'>3D momentum space</span>
+
+    <div class="k_tomo" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".kt2"></div>
+
+</section>
+-->
+
+<section class="slide">
+	<h2>3D k-space Tomography</h2>
+	  <img src="Bilder/Pd_isoenergy/X_cut.png" style="position:absolute;left:5%;top:25%;height:300px"></img>
+    <img class="kt2" src="Bilder/Pd_isoenergy/hv75/fct_brillouin_zone_hv75_img_labelled.png" style="position:absolute;right:5%;top:25%;height:350px"></img>
+    <img class="kt2" src="Bilder/k_tomography/final_state.png" style="position:absolute;left:38%;top:25%;height:300px"></img>
+<!--
+    <img class="kt3" src="Bilder/Pd_isoenergy/X_cut_BZ_blank.png" style="position:absolute;left:40%;top:25%;height:300px"></img>
+    <img class="kt3" src="Bilder/k_tomography/final_state_blank.png" style="position:absolute;right:5%;top:25%;height:300px"></img>
+    <img class="kt3" src="Bilder/Pd_FS/X.png" style="position:absolute;right:103px;top:158px;height:245px"></img>
+    <img class="kt3" src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;right:50px;top:105px;height:350px"></img>
+
+    <span class="kt3" style="color:#0000ff;position:absolute;left:45%;top:38%;font-size:100px">&rarr;</span>
+    <span class="kt3" style="color:#0000ff;position:absolute;left:40%;top:38%;font-size:15px">Assumption of free-<br>electron final state</span>
+    <span class="kt3" style="color:#0000ff;background-color:#ffffff;position:absolute;left:37%;top:60%;font-size:15px">Volume of data scanned along <br>  different photon energies are <br>  needed for such reconstruction.</span>
+-->
+    <figure style="position:absolute;width:65px;right:5px;top:250px">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+
+    <div class="anim-show slide" data-what=".kt2"></div>
+</section>
+
+<section class="slide">
+	<h2>Fermi Surface Tomography</h2>
+<div>
+  <div style="position:absolute;left:473px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv34-200_RGB_outline_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+  <div style="position:absolute;left:173px">
+    <video width="250px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv_scan_spol_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+    <figure style="position:absolute;right:5%;top:10%">
+	     <img src="Bilder/Pd_FS/Pd_FS_LDA+U_Vf0.65_WbgFS.png" style="height:150px"></img>
+    </figure>
+<!--
+  <div>
+    <figure style="position:absolute;width:300px;right:100px;top:87px">
+      <img src="Bilder/Pd_isoenergy/fct_brillouin_zone_withImage.png" style="width:500px;position:absolute;top:0px;" class="center">
+    </figure>
+  </div>
+-->
+
+    <figure style="position:absolute;width:376px;left:409px;top:123px">
+      <img src="Bilder/Pd_FS/axes_frame_spol.png" style="width:450px;position:absolute;top:0px;">
+    </figure>
+      <span class="kt2" style='color:#000000;font-size:20px;position:absolute;left:25%;top:83%'>Fermi surface tomography via momentum microscopy<br></span>
+    <!-- <span class="kt2" style='color:#000000;font-size:20px;position:absolute;right:10%;top:83%'> Free electron final states <br>cutting across momentum space.</span> -->
+</div>
+    <figure style="position:absolute;width:65px;right:50px;top:250px">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+</section>
+
+
+<section class="slide">
+	<h2>Fermi Surface Tomography</h2>
+<div>
+  <div style="position:absolute;left:343px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/Pd100_Ef_hv34-200_Ek_scaled_BZ.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+<!--
+  <div>
+    <figure style="position:absolute;width:300px;right:100px;top:87px">
+      <img src="Bilder/Pd_isoenergy/fct_brillouin_zone_withImage.png" style="width:500px;position:absolute;top:0px;" class="center">
+    </figure>
+  </div>
+-->
+
+    <figure style="position:absolute;width:376px;left:279px;top:123px">
+      <img src="Bilder/Pd_FS/axes_frame_spol.png" style="width:450px;position:absolute;top:0px;" class="center">
+    </figure>
+      <span class="kt2" style='color:#000000;font-size:20px;position:absolute;left:33%;top:83%'>Fermi surface tomography in 3D k-space<br></span>
+    <!-- <span class="kt2" style='color:#000000;font-size:20px;position:absolute;right:10%;top:83%'> Free electron final states <br>cutting across momentum space.</span> -->
+</div>
+    <figure style="position:absolute;width:65px;right:200px;top:250px">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+</section>
+
+
+<section class="slide">
+	<h2>Comparison with Theoretical Calculation, hv=155eV</h2>
+    <figure style="position:absolute;width:65px;right:5px;top:250px">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:376px;left:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+      <img class="center kt2" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">
+    </figure>
+
+    <figure class="kt3" style="position:absolute;width:376px;left:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.2.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt4" style="position:absolute;width:376px;left:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.4.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt5" style="position:absolute;width:376px;left:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.6.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt6" style="position:absolute;width:376px;left:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-1.35.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure style="position:absolute;width:376px;right:83px;top:123px">
+      <img class="kt0" src="Bilder/Pd_isoenergy/hv155/fct_brillouin_zone_hv155_img_labelled.png" style="width:220px;position:absolute;top:28px;right:70px">
+      <img class="kt1" src="Bilder/Pd_isoenergy/hv155/hv155p_Ef_CEM.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img class="kt1" src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+      <img class="center kt2" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">
+    </figure>
+
+    <figure class="kt3" style="position:absolute;width:376px;right:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.2_CEM.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt4" style="position:absolute;width:376px;right:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.4_CEM.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt5" style="position:absolute;width:376px;right:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-0.6_CEM.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--      <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+    <figure class="kt6" style="position:absolute;width:376px;right:83px;top:123px">
+      <img src="Bilder/Pd_isoenergy/hv155/hv155p_Ef-1.35_CEM.png" style="width:300px;position:absolute;top:28px;left:63px" class="center">
+      <img src="Bilder/Pd_FS/axes_frame_ppol.png" style="width:450px;position:absolute;top:0px;" class="center">
+<!--  <img class="center" src="Bilder/Pd_isoenergy/hv155/Rendered_FCT-BZ_Gamma.png" style="width:300px;position:absolute;top:28px;left:63px">-->
+    </figure>
+
+      <span style='width:300;color:#000000;font-size:20px;position:absolute;left:26%;top:80%' align="center">Experiment<br></span>
+      <span class="kt1" style='width:300;color:#000000;font-size:20px;position:absolute;right:13%;top:80%' align="center">Photoemission calculation</span>
+      <span class="kt1" style='width:300;color:#ff0000;font-size:20px;position:absolute;right:10%;top:85%' align="center">Collaboration with Jakub Schusser & J&aacute;n Min&aacute;r</span>
+      <span style='width:300;color:#0000ff;font-size:20px;position:absolute;left:50%;top:30%' align="center">E<sub>F</></span>
+      <span class="kt3" style='width:300;background-color:#ffffff;color:#0000ff;font-size:20px;position:absolute;left:47%;top:30%' align="center">E<sub>F</sub>-0.2eV</span>
+      <span class="kt4" style='width:300;background-color:#ffffff;color:#0000ff;font-size:20px;position:absolute;left:47%;top:30%' align="center">E<sub>F</sub>-0.4eV</span>
+      <span class="kt5" style='width:300;background-color:#ffffff;color:#0000ff;font-size:20px;position:absolute;left:47%;top:30%' align="center">E<sub>F</sub>-0.6eV</span>
+      <span class="kt6" style='width:300;background-color:#ffffff;color:#0000ff;font-size:20px;position:absolute;left:47%;top:30%' align="center">E<sub>F</sub>-1.35eV</span>
+
+      <div class="anim-show slide" data-what=".kt0"></div>
+      <div class="anim-show slide" data-what=".kt1"></div>
+      <div class="anim-show slide" data-what=".kt2"></div>
+      <div class="anim-show slide" data-what=".kt3"></div>
+      <div class="anim-show slide" data-what=".kt4"></div>
+      <div class="anim-show slide" data-what=".kt5"></div>
+      <div class="anim-show slide" data-what=".kt6"></div>
+
+</section>
+
+<section class="slide">
+    <h2 style="font-size: 25px;position:absolute">Conventional Energy vs 1D-momentum map of Pd across &Gamma;-point</sub></h2>
+    <img src="Bilder/Pd_FS/Gamma.png" style="position:absolute;left:100px;top:150px;height:300px"></img>
+    <img src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;width:429px;left:36px;top:85px">
+    <img class="rotated45" src="Bilder/Pd_FS/LDA+U_Gamma_trans_slice.PNG" style="position:absolute;width:179px;left:161px;top:212px">
+
+  <figure style="position:absolute;width:55px;right:50px;top:170px">
+    <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+  </figure>
+
+<div class=Gamma1>
+
+  <img style="position:absolute;top:320px;right:50px;height:210px" src=Bilder/Pd_isoenergy/KKR.PNG>
+  <img style="position:absolute;top:318px;right:300px;height:225px" src=Bilder/Pd_isoenergy/GammaCut2.png>
+  <img style="position:absolute;top:120px;right:180px;height:220px" src=Bilder/Pd_isoenergy/Eb_trans.PNG>
+
+  <span style='color:#0000ff;font-size:20px;position:absolute;left:250px;top:295px'>&Gamma;</span>
+  <span style='color:#0000ff;font-size:20px;position:absolute;left:305px;top:355px'>X</span>
+  <span style='color:#0000ff;font-size:20px;position:absolute;left:275px;top:385px'>W</span>
+  <span style='color:#0000ff;font-size:20px;position:absolute;left:245px;top:385px'>K</span>
+
+  <span class="E1" style='font-size:50px;color:#ff0000;position:absolute;left:280px;top:330px'>&#9711;</span>
+  <span class="E1" style='font-size:80px;color:#ff0000;position:absolute;right:160px;top:350px'>&#9711;</span>
+  <span class="E1" style='font-size:80px;color:#ff0000;position:absolute;right:390px;top:345px'>&#9711;</span>
+  <span class="E1" style='font-size:80px;color:#ff0000;position:absolute;right:288px;top:120px'>&#9711;</span>
+  <div class="anim-show slide" data-what=".E1"></div>
+</div>
+
+</section>
+
+<section class="slide deck-status-fake-end">
+  <img src="Bilder/QR.png" style="height:200px;position:absolute;left:100px;top:300px"></img>
+  <span style='color:#0000ff;font-size:40px;position:absolute;left:25%;top:40%'>Thank you for your attention!</span>
+  <span style='color:#0000ff;font-size:25px;text-decoration:underline;position:absolute;left:300px;top:450px'>https://momentum-microscopy.fz-juelich.de/</span>
+</section>
+
+<!--
+<section class="slide deck-status-fake-end">
+	<h2>Summary</h2>
+  <ul style= "font-size: 23px;list-style-type:disc;position:absolute;left:55px;top:130px">
+    <li>Fermi surface tomography of Pd(100) with <br>constant initial-state momentum microscope.</li>
+    <li>Three dimension k-space reconstruction of the<br>  Fermi surface.</li>
+    <li>Qualitative comparison between experimental <br>and theoretical data.</li>
+    <li>Interplay between electron correlations and<br> spin orbit-itneraction has to be taken into account.</li>
+  </ul>
+  <img src="Bilder/QR.png" style="height:100px;position:absolute;left:50px;top:450px"></img>
+  <span style='color:#000000;font-size:20px;position:absolute;right:8%;top:75%'>Fermi Surface of Palladium<br> in 3D k-space.</span>
+  <span style='color:#00ff00;font-size:25px;position:absolute;left:25%;top:75%'>Thank you for your attention!</span>
+  <span style='color:#0000ff;font-size:13px;text-decoration:underline;position:absolute;left:150px;top:530px'>https://momentum-microscopy.fz-juelich.de/</span>
+</section>
+-->
+
+<!--
+<section class="slide">
+	<h2>Photoemission Experiment Geometry</h2>
+    <figure style="position:absolute;left:20%;">
+	     <img src="Bilder/Momentum_Microscope/geo_p.png" style="height:380px"></img>
+    </figure>
+</section>
+-->
+
+
+
+
+
+<!--
+<section class="slide">
+	<h2>Momentum cut across &Gamma;-point in k-space</h2>
+	  <img src="Bilder/Pd_FS/Gamma.png" style="position:absolute;left:100px;top:150px;height:300px"></img>
+    <img src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;width:429px;left:36px;top:85px">
+    <img class="rotated45 Gamma1" src="Bilder/Pd_FS/LDA+U_Gamma_trans_slice.PNG" style="position:absolute;width:179px;left:161px;top:212px">
+    <img src="Bilder/Pd_FS/LDA+U_Gamma_BZ.png" style="position:absolute;width:200px;right:100px;top:200px">
+    <img src="Bilder/Pd_FS/Gamma_RT.png" style="position:absolute;width:245px;height:327px;right:300px;top:150px">
+    <span style="color:#000000;position:absolute;right:7%;top:60%;font-size:20px">LDA+U</span>
+    <div class="anim-show slide" data-what=".Gamma1"></div>
+</section>
+
+<section class="slide">
+	<h2>Momentum cut across X-point in k-space</h2>
+	  <img src="Bilder/Pd_FS/X.png" style="position:absolute;left:100px;top:150px;height:300px"></img>
+    <img src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;width:429px;left:36px;top:85px">
+    <img class="rotated45 X1" src="Bilder/Pd_FS/LDA+U_X_trans_slice.PNG" style="position:absolute;width:94px;left:202px;top:258px">
+    <img class="rotated45 X2" src="Bilder/Pd_FS/LDA+U_Gamma_trans_slice.PNG" style="position:absolute;width:177px;left:285px;top:213px">
+    <img class="rotated45 X2" src="Bilder/Pd_FS/LDA+U_Gamma_trans_slice.PNG" style="position:absolute;width:177px;left:40px;top:213px">
+    <img src="Bilder/Pd_FS/LDA+U_X_BZ.png" style="position:absolute;width:200px;right:100px;top:200px">
+    <img src="Bilder/Pd_FS/X_RT.png" style="position:absolute;width:245px;height:327px;right:300px;top:150px">
+    <span style="color:#000000;position:absolute;right:7%;top:60%;font-size:20px">LDA+U</span>
+    <div class="anim-show slide" data-what=".X1"></div>
+    <div class="anim-show slide" data-what=".X2"></div>
+</section>
+
+<section class="slide">
+	<h2>Momentum cut across L-point in k-space</h2>
+	  <img src="Bilder/Pd_FS/L1.png" style="position:absolute;left:100px;top:150px;height:300px"></img>
+    <img src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;width:429px;left:36px;top:85px">
+    <img class="rotated45 L1" src="Bilder/Pd_FS/LDA+U_L_trans_slice.PNG" style="position:absolute;width:177px;left:161px;top:215px">
+    <img src="Bilder/Pd_FS/LDA+U_L_BZ.png" style="position:absolute;width:200px;right:100px;top:200px">
+    <img src="Bilder/Pd_FS/L1_RT.png" style="position:absolute;width:245px;height:327px;right:300px;top:150px">
+    <span style="color:#000000;position:absolute;right:7%;top:60%;font-size:20px">LDA+U</span>
+    <img class="L2"src="Bilder/Pd_FS/L2.png" style="position:absolute;left:100px;top:150px;height:300px"></img>
+    <img class="L2"src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;width:429px;left:36px;top:85px">
+    <img class="L2" src="Bilder/Pd_FS/L2_RT.png" style="position:absolute;width:245px;height:327px;right:300px;top:150px">
+    <img class="rotated45 L2" src="Bilder/Pd_FS/LDA+U_L_trans_slice.PNG" style="position:absolute;width:177px;left:161px;top:215px">
+
+    <div class="anim-show slide" data-what=".L1"></div>
+    <div class="anim-show slide" data-what=".L2"></div>
+
+</section>
+
+
+<section class="slide">
+    <h2 style="font-size: 25px;position:absolute;top:-30px">Isoenergy Momentum Map of Pd across High Symmetry Points</sub></h2>
+    <figure style="position:absolute;top:15%;left:7%;height:480px">
+	     <img src="Bilder/Pd_isoenergy/direct1.png" style="height:480px"></img>
+    </figure>
+
+    <img class="direct2" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct2.png>
+    <img class="direct3" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct3.png>
+    <img class="direct4" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct4.png>
+    <img class="direct5" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct5.png>
+    <img class="direct6" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct6.png>
+    <div class="direct7">
+    <img class="rotated45" style="position:absolute;top:135px;left:145px;height:120px" src=Bilder/Pd_isoenergy/L.png>
+    <img class="direct7" style="position:absolute;top:167px;left:419px;height:56px" src=Bilder/Pd_isoenergy/X.png>
+    <img class="rotated45" style="position:absolute;top:135px;right:211px;height:120px" src=Bilder/Pd_isoenergy/Gamma.png>
+    </div>
+
+    <div class="direct2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct5" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct6" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct7" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".direct2"></div>
+    <div class="anim-show slide" data-what=".direct3"></div>
+    <div class="anim-show slide" data-what=".direct4"></div>
+    <div class="anim-show slide" data-what=".direct5"></div>
+    <div class="anim-show slide" data-what=".direct6"></div>
+    <div class="anim-show slide" data-what=".direct7"></div>
+</section>
+-->
+
+
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+
+<!-- deck.status snippet -->
+<!-- <p class="deck-status"><span class="deck-status-current"></span> / 10 -->
+<!--    <span class="deck-status-total"></span> -->
+<!-- </p> -->
+
+
+
+
+<!-- cloned pointer will be added automatically by the clone extension, use {snippets: { clone:false }} to not do it (and maybe add your custom one-->
+<!--<div class="clonepointer" style="width:20px; height:20px; background-color:red;"></div>-->
+<div class="clonepointer scale-on-click">
+    <div style="border: 4px solid blue; border-radius: 50%; z-index:10; margin: -15px 0 0 -15px; width:24px; height:24px; opacity: .5;"></div>
+</div>
+<div class="clonepointer scale-on-click">
+    <div style="border: 4px solid blue; border-radius: 50%; z-index:10; margin: -23px 0 0 -23px; width:40px; height:40px;"></div>
+</div>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+</div> <!-- end of deck container -->
+
+</body>
+</html>

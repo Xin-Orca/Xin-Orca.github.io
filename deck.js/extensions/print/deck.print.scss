@@ -1,0 +1,46 @@
+.deck-print {
+  //overflow:auto;
+  overflow:visible !important;
+  overflow-y:visible !important;
+  background-color: transparent;
+
+  .slide {
+    position:relative;
+    left:0;
+    top:0;
+    visibility:visible;
+  }
+
+  > .slide {
+    .no-csstransforms & {
+      float:left;
+      width:100%;
+      height:100%;
+      min-height:0;
+      margin:1%;
+      font-size:0.22em;
+      overflow:hidden;
+      padding:0 0.5%;
+    }
+
+    .csstransforms & {
+      -webkit-transform:scale(1.00) !important;
+      -ms-transform:scale(1.00) !important;
+      transform:scale(1.00) !important;
+      -webkit-transform-origin:0 0;
+      -ms-transform-origin:0 0;
+      transform-origin:0 0;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      padding:0 48px;
+      margin:12px;
+    }
+  }
+
+  iframe, img, video {
+    max-width:100%;
+  }
+}

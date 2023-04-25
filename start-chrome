@@ -1,0 +1,2 @@
+#!/bin/sh
+google-chrome  --allow-file-access-from-files LEEMPEEM12.html

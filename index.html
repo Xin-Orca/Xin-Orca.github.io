@@ -1,0 +1,1254 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+        <!-- PROVIDE METADATA -->
+        <!-- ================ -->
+        <title>Soft X-ray Fermi Surface Tomography of Palladium and Rhodium via Momentum Microscopy</title>
+        <meta name="author" content="XXX" >
+
+               <!-- Required stylesheet -->
+        <link rel="stylesheet" href="deck.js/core/deck.core.css">
+        <script src="deck.js/modernizr.custom.js"></script>
+        <script src="deck.js/jquery.min.js"></script>
+        <script src="deck.js/core/deck.core.js"></script>
+
+        <!-- Transition, for your audience, use it only for short presentations, see deck.js/themes/transition -->
+        <!-- 	<link rel="stylesheet" href="deck.js/themes/transition/fade.css"> -->
+
+        <!-- Style theme. -->
+        <link rel="stylesheet" href="deck.js/themes/style/fzj/fzj.css">
+
+        <!-- PROVIDE EXTENSIONS: JS and CSS files -->
+        <!-- ============================ -->
+        <!-- proper slide scaling (type 's' to disable) -->
+        <script src="deck.js/extensions/fit/deck.fit.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/fit/deck.fit-fs.css"> <!-- fit to window -->
+        <!-- smart syntax -->
+        <script src="deck.js/extensions/smartsyntax/deck.smartsyntax.js"></script>
+        <!-- math equations -->
+        <script src="deck.js/libs/display-latex2.user.js"></script>
+        <script src="deck.js/extensions/simplemath/deck.simplemath.js"></script>
+        <!-- clone by typing 'c'   (popups a slave presentation) (uses "clone snippet" at the end of the page) -->
+        <link rel="stylesheet" href="deck.js/extensions/clone/deck.clone.css">
+        <script src="deck.js/extensions/clone/deck.clone.js"></script>
+        
+        <!-- clone speaker notes, use class "notes" -->
+        <link rel="stylesheet" href="deck.js/extensions/notes/deck.notes.css">
+        <script src="deck.js/extensions/notes/deck.notes.js"></script>
+        
+        <!-- timekeeper -->
+        <link rel="stylesheet" href="deck.js/extensions/timekeeper/deck.timekeeper.css">
+        <script src="deck.js/extensions/timekeeper/deck.timekeeper.js"></script>
+        <!-- goto by typing 'g'   (uses "goto snippet" at the end of the page) -->
+	      <link rel="stylesheet" href="deck.js/extensions/goto/deck.goto.css">
+        <script src="deck.js/extensions/goto/deck.goto.js"></script>
+        <!-- animations, svg etc (better to include it after the 'status' extension... so see below) -->
+
+        <!-- slide number indicator   (uses "status snippet" at the end of the page) -->
+        <link rel="stylesheet" href="deck.js/extensions/progress/deck.progress.css">
+        <script src="deck.js/extensions/progress/deck.progress.js"></script>
+
+        <!-- navigation buttons   (uses "navigation snippet" at the end of the page) -->
+	     <link rel="stylesheet" href="deck.js/extensions/navigation/deck.navigation.css">
+        <script src="deck.js/extensions/navigation/deck.navigation.js"></script>
+        <!-- slide selector by typing 'm' -->
+        <script src="deck.js/extensions/menu/deck.menu.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/menu/deck.menu.css">
+
+        <!-- animations, svg etc (better to include it after the 'status' extension (to avoid huge fake slide numbers) -->
+        <script src="deck.js/extensions/step/deck.step.js"></script>
+        <script src="deck.js/extensions/events/deck.events.js"></script>
+        <script src="deck.js/extensions/anim/deck.anim.js"></script>
+        <script src="deck.js/libs/jquerysvg/jquery.svg.min.js"></script>
+        <script src="deck.js/libs/jquerysvg/jquery.svganim.min.js"></script>
+        <script src="deck.js/extensions/svg/deck.svg.js"></script>
+        <script src="deck.js/extensions/metadata/deck.metadata.js"></script>
+
+        <!-- slide printing by typing 'p' -->
+        <script src="deck.js/extensions/print/deck.print.js"></script>
+        <link rel="stylesheet" href="deck.js/extensions/print/deck.print.css">
+
+
+        <!-- Deck.js options (advanced) -->
+
+        <script>
+            var slidesTotal=34;
+
+            $(function() {
+                $.deck('.slide', {
+                    //fitMarginX:100, fitMarginY:100, // uncomment to tune margin
+                    //fitMode: "stretched", // uncomment to strech
+                    //designWidth: 800,
+                    designWidth: 960,
+                    designHeight: 600,
+                    snippets: {clone: false },
+                    dummy:""
+                });
+            });
+            $(document).ready(function(){
+                $("section[class~='slide']").not(".title-slide, .no-footbar").append(
+                "<div class='footbar'>\
+                    <span style='position:absolute;left:5%;bottom:2%;font-size: 12px'>LEEM PEEM 12, Córdoba<br>Thursday, Sept 29, 2022<br></span>\
+                    <span style='position:absolute;left:30%;font-size: 12px'>Soft X-ray Fermi Surface Tomography of Palladium and Rhodium via Momentum Microscopy<br></span>\
+                    <span style='position:absolute;right:1%'> <span class='deck-status-current'/> / <span class='deck-status-total'/> </span>\
+                </div>");
+            });
+        </script>
+
+		<style>
+			#figtable {
+				caption-side: bottom;
+				text-align: center;
+				border-collapse: collapse;
+				}
+
+			table, th, td {
+				border: 1px solid black;
+				}
+
+    .square {
+      height: 100px;
+      width: 100px;
+      background-color: #ffffff;
+    }
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
+		</style>
+</head>
+    </head>
+
+
+
+
+<!-------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------->
+<!-------------------------------------------------------------------------------------------------------->
+
+
+
+
+<body>
+<!-- This text should not be displayed if everything goes well: use left/right arrow keys to browse the presentation.<br/> -->
+
+<div class="deck-container">
+
+<section class="slide title-slide">
+
+    <h1 style="font-size: 35px">
+        Soft X-ray Fermi Surface Tomography of <br>Palladium and Rhodium via Momentum Microscopy
+    </h1>
+
+    <div class="authors" style="width:80%;font-size: 17px">
+        Xin Liang Tan<sup>1</sup>, Kenta Hagiwara<sup>1</sup>, Ying-Jiun Chen<sup>1,2</sup>, Iulia Cojocariu<sup>1</sup>, Daniel Baranowski<sup>1</sup> <br> Jakub Schusser<sup>3</sup>, Ján Minár<sup>3</sup>, Vitaliy Feyer<sup>1</sup>, Claus M. Schneider<sup>1,2,4</sup> and Christian Tusche<sup>1,2</sup>
+    </div>
+    <div class="affiliations">
+            <sup>1</sup>Peter Grünberg Institut (PGI-6), Forschungszentrum Jülich, Germany</br>
+            <sup>2</sup>Fakultät für Physik, Universität Duisburg-Essen, Duisburg, Germany<br>
+            <sup>3</sup>New Technologies-Research Center, University of West Bohemia, Pilsen, Czech Republic<br>
+            <sup>4</sup>Department of Physics, University of California, Davis, California 95616, USA<br>
+    </div>
+    <div class="notes">
+        This slide has speaker notes.
+        </div>
+
+    <img style="height:140px;position:absolute;left:55px;top:28px" src=Bilder/Pd/theory/theory.png>
+    <img style="height:140px;position:absolute;left:260px;top:30px" src=Bilder/Pd/Pd_hv55.png>
+    <img style="height:130px;position:absolute;left:450px;top:35px" src=Bilder/Pd/theory/theory2.png>
+
+    <!--<img style="height:50px;position:absolute;right:50px;top:120px" src=Logos/Uni-DUE.png>-->
+
+</section>
+
+
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!--<section class="slide">
+	<h2>2D Magnetism & Half-metallicity</h2>
+
+	  <img src="Bilder/2D_magnetism_lit/Cr2Ge2Te6.png" style="height:100px;position:absolute;left:10%;top:25%"></img>
+    <span style="position:absolute;left:25%;top:25%">Cr<sub>2</sub>Ge<sub>2</sub>Te<sub>6</sub></span>
+    <img src="Bilder/2D_magnetism_lit/CrI3.png" style="height:100px;position:absolute;right:10%;top:26%"></img>
+    <span style="position:absolute;right:25%;top:26%">CrI<sub>3</sub></span>
+    <img src="Bilder/2D_magnetism_lit/gZCO.png" style="height:150px;position:absolute;left:10%;top:46%"></img>
+    <span style="position:absolute;left:25%;top:46%">g-Zn<sub>1-x</sub>Co<sub>x</sub>O</span>
+
+    <img class="lit2" src="Bilder/2D_magnetism_lit/LSMO.png" style="height:100px;position:absolute;right:30%;top:48%"></img>
+    <span class="lit2" style="position:absolute;right:15%;top:48%">Complex oxides</span>
+    <img class="lit2" src="Bilder/2D_magnetism_lit/oxides.png" style="height:100px;position:absolute;right:5%;top:54%"></img>
+    <img class="lit3" src="Bilder/2D_magnetism_lit/Heusler.png" style="height:100px;position:absolute;right:20%;top:72%"></img>
+    <span class="lit3" style="position:absolute;right:40%;top:68%">Heusler alloys</span>
+
+    <div class="lit4 square" style="position:absolute;left:10%;top:20%;height:500px;width:900px"></div>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/Cr2Ge2Te6.png" style="height:100px;position:absolute;left:10%;top:25%;filter:blur(8px);"></img>
+    <span class="lit4" style="position:absolute;left:25%;top:25%;filter:blur(8px)">Cr<sub>2</sub>Ge<sub>2</sub>Te<sub>6</sub></span>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/CrI3.png" style="height:100px;position:absolute;right:10%;top:26%;filter:blur(8px)"></img>
+    <span class="lit4" style="position:absolute;right:25%;top:26%;filter:blur(8px)">CrI<sub>3</sub></span>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/gZCO.png" style="height:150px;position:absolute;left:10%;top:46%;filter:blur(8px)"></img>
+    <span class="lit4" style="position:absolute;left:25%;top:46%;filter:blur(8px)">g-Zn<sub>1-x</sub>Co<sub>x</sub>O</span>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/LSMO.png" style="height:100px;position:absolute;right:30%;top:48%;filter:blur(8px)"></img>
+    <span class="lit4" style="position:absolute;right:15%;top:48%;filter:blur(8px)">Complex oxides</span>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/oxides.png" style="height:100px;position:absolute;right:5%;top:54%;filter:blur(8px)"></img>
+    <img class="lit4" src="Bilder/2D_magnetism_lit/Heusler.png" style="height:100px;position:absolute;right:20%;top:72%;filter:blur(8px)"></img>
+    <span class="lit4" style="position:absolute;right:40%;top:68%;filter:blur(8px)">Heusler alloys</span>
+
+    <span class="lit4" style='font-size: 30px;position:absolute;left:150px;top:200px'>1.8ML FePd/Pd(100)</span>
+
+    <ul class="lit4" style= "font-size: 28px;list-style-type:disc;position:absolute;left:150px;top:250px">
+      <li>Confined dimensionality</li>
+      <li>Simple stochiometry, ordered, reproducible</li>
+      <li>Fundamental understanding of magnetism</li>
+    </ul>
+
+    <div class="lit2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="lit3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="lit4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".lit2"></div>
+    <div class="anim-show slide" data-what=".lit3"></div>
+    <div class="anim-show slide" data-what=".lit4"></div>
+
+</section>
+-->
+
+
+<section class="slide">
+	<h2>Fermi Surface</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es7.png" style="height:360px"></img>
+    </figure>
+	<img class="intro1" src="Bilder/intro/dehassvanalphen.png" style="position:absolute;top:26%;left:5%;height:330px"></img>
+	<span class="intro1" style="font-size: 20px;position:absolute;left:8%;top:20%">de-Hass - van-Alphen oscillations</span>
+	<div class="intro2 square" style="position:absolute;left:5%;top:120px;height:500px;width:4500px"></div>
+	
+	<img class="intro2" src="Bilder/intro/fct_Co_Fermisurface_2.jpg" style="position:absolute;left:15%;top:45%;height:250px"></img>
+	<img class="intro2" src="Bilder/intro/FS_fct_Co_Ud0.00_majo.png" style="position:absolute;left:60%;top:25%;height:200px"></img>
+	<img class="intro2" src="Bilder/intro/FS_fct_Co_Ud0.00_mino.png" style="position:absolute;left:60%;top:60%;height:200px"></img>
+    <img class="intro2" src="Bilder/intro/co_cite.png" style="position:absolute;left:15%;top:23%;width:400px"></img>
+    <div class="anim-show slide" data-what=".intro1"></div>
+    <div class="anim-show slide" data-what=".intro2"></div>
+
+
+</section>
+
+<section class="slide">
+	<h2>Electronic Structure of Quantum Materials</h2>
+    <img src="Bilder/intro/NiTe2.png" style="height:400px;position:absolute;left:20%;top:23%"></img>
+    <span style="font-size: 20px;position:absolute;left:10%;top:33%">NiTe<sub>2</sub></span>
+	<span style="font-size: 12px;position:absolute;left:8%;top:85%">K. Hagiwara. PhD thesis (2022)</span>
+	<div class="intro1 square" style="position:absolute;left:5%;top:120px;height:5000px;width:4500px"></div>
+    <figure class="intro1" style="position:absolute;left:15%;top:40%">
+       <img src="Bilder/intro/YJ_bulkgap.png" style="height:300px"></img>
+    </figure>
+    <img class="intro1" src="Bilder/intro/YJ_bulk_surface.png" style="position:absolute;right:15%;top:23%;width:250px"></img>
+    <img class="intro1" src="Bilder/intro/FeW_cite.png" style="position:absolute;left:15%;top:23%;width:400px"></img>
+    <div class="anim-show slide" data-what=".intro1"></div>
+
+
+
+</section>
+
+
+<section class="slide">
+	<h2>Momentum Microscopy</h2>
+    <img src="Bilder\Momentum_Microscope\MM.png" style="position:absolute;left:8%;top:20%;height:380px"></img>
+    <span style="font-size: 12px;position:absolute;left:8%;top:65%">Sample temperture down to 100K</span>
+
+    <img class="mmsp2" src=Bilder/Fe/Fe.png style="position:absolute;right:8%;top:30%;height:250px" >
+    <img class="mmsp2" src=Bilder/LUT/gray.png style="position:absolute;right:8%;top:75%;height:30px" >
+    <span class="mmsp2" style="font-size: 18px;position:absolute;right:8%;top:25%">Fermi Surface of 12ML Fe/Pd(100)</span>
+    <div class="mmsp3 square" style="position:absolute;right:7%;top:25%;height:500px;width:300px"></div>
+
+    <div class="mmsp3 square" style="position:absolute;left:56%;top:30%;height:250px;width:600px"></div>
+    <img class="mmsp3" src=Bilder\Momentum_Microscope\spin_filter.png style="position:absolute;right:8%;top:30%;height:250px" >
+
+
+    <div class="mmsp4 square" style="position:absolute;left:56%;top:30%;height:250px;width:600px"></div>
+    <img class="mmsp4"src="Bilder/Fe/Fe_spin.png" style="position:absolute;width:380px;right:50px;top:180px">
+    <img class="mmsp4"src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:150px;right:50px;bottom:70px">
+    <img class="mmsp4" src=Bilder/LUT/gray.png style="position:absolute;right:8%;top:90%;height:30px" >
+    <img class="mmsp4" src="Bilder/spin_axis.png" style="position:absolute;width:150px;right:50px;bottom:200px">
+    <img class="mmsp4" src=Bilder/Fe/Fe.png style="position:absolute;right:250px;bottom:50px;width:180px" >
+    <span class="mmsp4" style="font-size: 18px;position:absolute;left:57%;top:130px">Spin-resolved Fermi Surface of <br>12ML Fe/Pd(100)</span>
+    <span class="mmsp4" style="font-size: 14px;position:absolute;left:57%;top:360px">Spin-integrated Fermi Surface</span>
+    <div class="anim-show slide" data-what=".mmsp2"></div>
+    <div class="anim-show slide" data-what=".mmsp3"></div>
+    <div class="anim-show slide" data-what=".mmsp4"></div>
+
+    <div class="mmsp2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mmsp3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mmsp4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+</section>
+
+
+<section class="slide">
+	<h2>Fermi Surface of Palladium</h2>
+    <img src="Bilder/Pd/theory/theory.png" style="position:absolute;left:10%;top:25%;height:350px"></img>
+	<span style="font-size: 12px;position:absolute;left:8%;top:85%">FP-LAPW elk code</span>
+	<img src="Bilder/Pd/theory/theory3.png" style="position:absolute;right:5%;top:30%;height:300px"></img>
+    <div class="fs1 square" style="position:absolute;left:50%;top:120px;height:5000px;width:4500px"></div>
+	<span class="fs1" style="font-size: 20px;position:absolute;right:8%;top:25%">k<sub>z</sub> projection with extended zone scheme</span>
+	<img class="fs1" src="Bilder/Pd/theory/theory2.png" style="position:absolute;right:10%;top:30%;height:300px"></img>
+
+	<div class="anim-show slide" data-what=".fs1"></div>
+</section>
+
+<section class="slide">
+	<h2>Free-electron final state</h2>
+	  <img src="Bilder/Pd/Pd_hv75.png" style="position:absolute;left:5%;top:25%;height:250px"></img>
+    <img class="kt2" src="Bilder/Pd_isoenergy/hv75/fct_brillouin_zone_hv75_img_labelled.png" style="position:absolute;right:5%;top:25%;height:350px"></img>
+    <img class="kt2" src="Bilder/PES/PES.png" style="position:absolute;left:32%;top:25%;height:250px"></img>
+    <img class="kt2" src="Bilder/PES/radius_PES.png" style="position:absolute;left:38%;top:75%;width:350px"></img>
+<!--
+    <img class="kt3" src="Bilder/Pd_isoenergy/X_cut_BZ_blank.png" style="position:absolute;left:40%;top:25%;height:300px"></img>
+    <img class="kt3" src="Bilder/k_tomography/final_state_blank.png" style="position:absolute;right:5%;top:25%;height:300px"></img>
+    <img class="kt3" src="Bilder/Pd_FS/X.png" style="position:absolute;right:103px;top:158px;height:245px"></img>
+    <img class="kt3" src="Bilder/Pd_FS/graph_frame_Nov2019_Ef.png" style="position:absolute;right:50px;top:105px;height:350px"></img>
+
+    <span class="kt3" style="color:#0000ff;position:absolute;left:45%;top:38%;font-size:100px">&rarr;</span>
+    <span class="kt3" style="color:#0000ff;position:absolute;left:40%;top:38%;font-size:15px">Assumption of free-<br>electron final state</span>
+    <span class="kt3" style="color:#0000ff;background-color:#ffffff;position:absolute;left:37%;top:60%;font-size:15px">Volume of data scanned along <br>  different photon energies are <br>  needed for such reconstruction.</span>
+-->
+    <figure style="position:absolute;width:65px;right:5px;top:250px">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+
+    <div class="anim-show slide" data-what=".kt2"></div>
+</section>
+
+<section class="slide">
+	<h2>Fermi Surface Tomography of Palladium</h2>
+	  <img src="Bilder/Pd/SX/SX.png" style="position:absolute;left:10%;top:21%;height:400px"></img>
+	  <img src="Bilder/Pd/theory/theory2.png" style="position:absolute;right:4%;top:23%;height:200px"></img>
+    <img class="sx1"src="Bilder/Pd/SX/SX1.png" style="position:absolute;left:10%;top:21%;height:400px"></img>
+    <img class="sx2"src="Bilder/Pd/SX/SX2.png" style="position:absolute;left:10%;top:21%;height:400px"></img>
+    <img class="sx3"src="Bilder/Pd/SX/SX3.png" style="position:absolute;left:10%;top:21%;height:400px"></img>
+
+	<div class="anim-show slide" data-what=".sx1"></div>
+    <div class="anim-show slide" data-what=".sx2"></div>
+    <div class="anim-show slide" data-what=".sx3"></div>
+</section>
+
+<section class="slide">
+	<h2>Fermi Surface Tomography of Palladium</h2>
+<div>
+  <div style="position:absolute;left:373px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv34-200_RGB_outline_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+  <div style="position:absolute;left:73px">
+    <video width="250px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv_scan_spol_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+    <figure style="position:absolute;right:5%;top:15%">
+	     <img src="Bilder/theory.png" style="height:200px"></img>
+    </figure>
+    <figure style="position:absolute;right:5%;top:53%">
+	     <img src="Bilder/theory2.png" style="height:200px"></img>
+    </figure>
+<!--
+  <div>
+    <figure style="position:absolute;width:300px;right:100px;top:87px">
+      <img src="Bilder/Pd_isoenergy/fct_brillouin_zone_withImage.png" style="width:500px;position:absolute;top:0px;" class="center">
+    </figure>
+  </div>
+-->
+    <figure style="position:absolute;width:376px;left:309px;top:123px">
+      <img src="Bilder/Pd_FS/axes_frame_spol.png" style="width:450px;position:absolute;top:0px;">
+    </figure>
+      <span class="kt2" style='color:#000000;font-size:20px;position:absolute;left:15%;top:83%'>Fermi surface tomography via momentum microscopy<br></span>
+      <span class="kt2" style='color:#000000;font-size:15px;position:absolute;right:2%;top:47%'>Theoretical Fermi Surface of Palladium<br></span>
+      <span class="kt2" style='color:#000000;font-size:15px;position:absolute;right:5%;top:86%'>k<sub> z</sub> Projection of Fermi surface<br></span>
+    <!-- <span class="kt2" style='color:#000000;font-size:20px;position:absolute;right:10%;top:83%'> Free electron final states <br>cutting across momentum space.</span> -->
+</div>
+    <figure style="position:absolute;width:65px;left:5%;bottom:10%">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Constant Initial State Momentum Microscopy</h2>
+    <img src="Bilder/Pd/photon_energy/Gamma-X.png" style="position:absolute;top:130px;height:420px;left:159px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:80%;height:30px" >
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Complex Band Structure along Normal Emission</h2>
+    <img src="Bilder/Pd/photon_energy/CBS.png" style="position:absolute;top:130px;height:400px;left:159px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:85%;top:80%;height:30px" >
+</section>
+
+
+<section class="slide">
+	<h2>Experiment vs One-step Photoemission Calculations</h2>
+    <img src="Bilder/Pd/SX/55.png" style="position:absolute;left:10%;top:20%;height:400px"></img>
+    <img class="sx1" src="Bilder/Pd/SX/75.png" style="position:absolute;left:10%;top:20%;height:400px"></img>
+    <img class="sx2" src="Bilder/Pd/SX/155.png" style="position:absolute;left:10%;top:20%;height:400px"></img>
+    <div class="sx3 square" style="position:absolute;left:5%;top:120px;height:5000px;width:4500px"></div>
+    <figure class="sx3" style="position:absolute;right:3%;top:40%">
+	     <img src="Bilder/theory2.png" style="height:180px"></img>
+    </figure>
+    <img class="sx3" src="Bilder/Pd/SX/VUVall.png" style="position:absolute;left:10%;top:20%;height:400px"></img>
+	<div class="anim-show slide" data-what=".sx1"></div>
+    <div class="anim-show slide" data-what=".sx2"></div>
+    <div class="anim-show slide" data-what=".sx3"></div>
+</section>
+
+
+
+<section class="slide">
+	<h2>Fermi Surface of Rhodium</h2>
+    <img src="Bilder/Rh/Rh_FS.png" style="position:absolute;left:10%;top:25%;height:350px"></img>
+	<span style="font-size: 12px;position:absolute;left:8%;top:85%">FP-LAPW elk code</span>
+	<img src="Bilder/Rh/Rh_FS2.png" style="position:absolute;right:5%;top:30%;height:350px"></img>
+    <div class="fs1 square" style="position:absolute;left:50%;top:120px;height:5000px;width:4500px"></div>
+	<span class="fs1" style="font-size: 20px;position:absolute;right:8%;top:25%">k<sub>z</sub> projection with extended zone scheme</span>
+	<img class="fs1" src="Bilder/Rh/Rh_proj.png" style="position:absolute;right:10%;top:30%;height:300px"></img>
+    <img class="fs2" src="Bilder/Rh/Rh_75.png" style="position:absolute;left:10%;top:25%;height:350px"></img>
+    <div class="anim-show slide" data-what=".fs1"></div>
+	<div class="anim-show slide" data-what=".fs2"></div>
+</section>
+
+
+<section class="slide">
+	<h2>Fermi Surface Tomography of Rhodium</h2>
+  <div>
+    <div style="position:absolute;left:373px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Rh/animation_lowE.mp4" type="video/mp4">
+    </video>
+  </div>
+    <div style="position:absolute;left:73px;top:23%">
+    <video width="200px" controls muted loop autoplay>
+      <source src="Bilder/Rh/animationBZ_lowE.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="fs1" style="position:absolute;left:373px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Rh/animation_highE.mp4" type="video/mp4">
+    </video>
+  </div>
+  <div class="fs1" style="position:absolute;left:73px;top:23%">
+    <video width="200px" controls muted loop autoplay>
+      <source src="Bilder/Rh/animationBZ_highE.mp4" type="video/mp4">
+    </video>
+  </div>
+  
+    <figure style="position:absolute;right:5%;top:15%">
+	     <img src="Bilder/Rh/Rh_FS.png" style="height:200px"></img>
+    </figure>
+    <figure style="position:absolute;right:5%;top:53%">
+	     <img src="Bilder/Rh/Rh_proj.png" style="height:200px"></img>
+    </figure>
+<!--
+  <div>
+    <figure style="position:absolute;width:300px;right:100px;top:87px">
+      <img src="Bilder/Pd_isoenergy/fct_brillouin_zone_withImage.png" style="width:500px;position:absolute;top:0px;" class="center">
+    </figure>
+  </div>
+-->
+    <figure style="position:absolute;width:376px;left:309px;top:133px">
+      <img src="Bilder/Rh/Rh_template.png" style="width:450px;position:absolute;top:0px;">
+    </figure>
+      <span style='color:#000000;font-size:15px;position:absolute;right:2%;top:47%'>Theoretical Fermi Surface of Rhodium<br></span>
+      <span style='color:#000000;font-size:15px;position:absolute;right:5%;top:86%'>k<sub> z</sub> Projection of Fermi surface<br></span>
+    <!-- <span class="kt2" style='color:#000000;font-size:20px;position:absolute;right:10%;top:83%'> Free electron final states <br>cutting across momentum space.</span> -->
+</div>
+    <figure style="position:absolute;width:65px;left:5%;bottom:10%">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+    <img class="fs2"  src="Bilder/Rh/Rh_GammaX.png" style="position:absolute;left:10%;top:25%;height:350px"></img>
+  	<div class="anim-show slide" data-what=".fs1"></div>
+    <div class="anim-show slide" data-what=".fs2"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Spin-resolved Fermi Surface of Ultrathin Half-metal</h2>
+    <img src="Bilder/FePd/spin/hv35_spin_Ef_Ef0.2.png" style="position:absolute;left:10%;width:750px"></img>
+    <img src="Bilder/spin_axis_small.png" style="position:absolute;width:30px;right:50px;bottom:200px">
+    <img class="mmsp4"src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:100px;right:20px;bottom:50px">
+    <img class="hy1" src="Bilder/FePd/spin/hv35_spin_Ef_Ef0.2_2.png" style="position:absolute;left:10%;width:750px"></img>
+  <span style='color:#00ffff;font-size:30px;position:absolute;left:25%;top:85%'>DPG 2022 Regenburg Presentation</span>
+  <div class="anim-show slide" data-what=".hy1"></div>
+
+</section>
+
+
+
+
+<section class="slide deck-status-fake-end">
+	<h2>Summary</h2>
+  <ul style= "font-size: 25px;list-style-type:disc;position:absolute;left:55px;top:180px">
+    <li>Three-dimensional Fermi surface topology of Pd and Rh</li>
+    <li>Limitation and breakdown of free-electron final state model</li>
+    <li>Effects of strong spin-orbit coupling in Fermi surface topology</li>
+    <!--<li>Complex non-linear spin texture in a simple tunable 2D magnet.</li>-->
+  </ul>
+   <img style="height:140px;position:absolute;right:10%;top:20%" src=Bilder/Pd/theory/theory.png>
+   <img src="Bilder/Rh/Rh_FS.png" style="position:absolute;right:15%;top:55%;height:140px"></img>
+  <img src="Bilder/QR.png" style="height:100px;position:absolute;left:80px;top:400px"></img>
+  <span style='color:#00ff00;font-size:30px;position:absolute;left:25%;top:68%'>Thank you for your attention!</span>
+  <span style='color:#0000ff;font-size:13px;text-decoration:underline;position:absolute;left:250px;top:500px'>https://momentum-microscopy.fz-juelich.de/</span>
+</section>
+
+<!--
+<section class="slide deck-status-fake-end">
+	<h2>Acknowledgement</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Acknowledgement.png" style="height:380px"></img>
+    </figure>
+</section>
+-->
+
+<section class="slide">
+	<h2 style="font-size: 28px">Photon Energy Cut with One-step Calculation</h2>
+    <img src="Bilder/Pd/photon_energy/Gamma-M.png" style="position:absolute;top:130px;height:400px;left:159px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:80%;height:30px" >
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Broken Time-reversal Symmetry across Fermi Surface</h2>
+    <img src="Bilder/FePd/Tsymm/hv35_up_1.png" style="position:absolute;top:130px;width:239.6px;left:359px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:80%;height:30px" >
+    <div class="p1 square" style="position:absolute;top:140px;height:500px;width:4500px"></div>
+    <img class="p1" src=Bilder/LUT/gray.png style="position:absolute;left:85%;top:80%;height:27px" >
+    <img class="p1" style="position:absolute;top:130px;width:257.386px;left:350px" src=Bilder/FePd/Tsymm/hv35_up_2.png>
+    <img class="p2" style="position:absolute;top:120px;width:646.974px;left:168px" src=Bilder/FePd/Tsymm/hv35_up_full.png>
+    <div class="anim-show slide" data-what=".p1"></div>
+    <div class="anim-show slide" data-what=".p2"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Broken Time-reversal Symmetry across Fermi Surface</h2>
+    <img src="Bilder/FePd/Tsymm/hv55_updown_1.png" style="position:absolute;top:150px;left:10%;width:700px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:40%;top:80%;height:30px" >
+    <div class="p1 square" style="position:absolute;left:10%;top:140px;height:500px;width:4500px"></div>
+    <img class="p1" style="position:absolute;left:15%;top:120px;width:650px" src=Bilder/FePd/Tsymm/hv55_updown_full.png>
+    <img  class="p1" src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:80%;height:30px" >
+    <img class="p2" style="position:absolute;left:15%;top:120px;width:650px" src=Bilder/FePd/Tsymm/hv55_updown_full+.png>
+    <div class="anim-show slide" data-what=".p1"></div>
+    <div class="anim-show slide" data-what=".p2"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Spin-resolved Fermi Surface of 1.8ML FePd/Pd(100)</h2>
+	 <img src="Bilder/FePd/spin/hv55_spintex.png" style="position:absolute;left:25%;height:400px"></img>
+   <div class="anim-show slide" data-what=".spin1"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Other interesting aspects</h2>
+	 <img src="Bilder/FePd/hv55_Ek.png" style="position:absolute;left:25%;height:370px"></img>
+   <div class="anim-show slide" data-what=".spin1"></div>
+</section>
+
+
+<!--
+<section class="slide">
+    <h2>Circular Dichroism Momentum Microscopy of Pd(100)</sub></h2>
+    <figure class="center" style="height:400px;">
+      <figure style="position:absolute;width:370px;left:100px;top:210px">
+        <img src="Bilder/201905/053_KPEEM_Pd100_hv155_cpol_idx-SUM__PH_diff_YPC_RSL.png" style="width:400px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:370px;right:100px;top:210px">
+        <img src="Bilder/201905/Result of 053_KPEEM_Pd100_hv155_cpol_idx-SUM__PH_sum_YPC-2_RSL.png" style="width:400px;" class="center">
+      </figure>
+      <figcaption class="center" style="position:absolute;top:430px;">Fig.2.4 :Direct comparison of CDAD similar cut with c-pol sum. Binding energy to scale with each other. </figcaption>
+    </figure>
+</section>
+-->
+
+
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+
+
+
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<section class="slide">
+	<h2>Spin-resolved Momentum Microscopy</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Momentum_Microscope/mmspin3a.png" style="height:380px"></img>
+    </figure>
+    <img class="mmsp4" style="position:absolute;left:5%;height:380px" src=Bilder/Momentum_Microscope/mmspin4.png>
+    <img class="mmsp5" style="position:absolute;left:5%;height:380px" src=Bilder/Momentum_Microscope/mmspin5.png>
+    <img class="mmsp6" style="position:absolute;left:5%;height:380px" src=Bilder/Momentum_Microscope/mmspin6.png>
+    <div class="mmsp4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mmsp5" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mmsp6" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".mmsp4"></div>
+    <div class="anim-show slide" data-what=".mmsp5"></div>
+    <div class="anim-show slide" data-what=".mmsp6"></div>
+</section>
+
+<section class="slide">
+	<h2>Theoretical Calculations</h2>
+    <img src="Bilder/FePd/Tsymm/hv55_updown_1.png" style="position:absolute;top:150px;left:10%;width:700px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:40%;top:80%;height:30px" >
+    <figure style="position:absolute;right:10%;">
+	     <img src="Bilder/FePd/theory/PdFePd.png" style="height:300px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>The Thinnest Known Half Metallic System</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/FePd.png" style="height:330px"></img>
+    </figure>
+
+    <img class="FePd2" style="position:absolute;left:5%;height:330px" src=Bilder/Electronic_structure_of_solids/FePd2.png>
+        <img class="FePd2" style="position:absolute;right:5%;top:30%;height:250px" src=Bilder\LEED_MEED\MOKE_FePd.png>
+    <img class="FePd3" style="position:absolute;left:5%;height:330px" src=Bilder/Electronic_structure_of_solids/FePd3.png>
+
+    <div class="anim-show slide" data-what=".FePd2"></div>
+    <div class="anim-show slide" data-what=".FePd3"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 30px">Preparation of 1.8 monolayers FePd on Pd(100)</h2>
+	  <img src="Bilder/LEED_MEED/LEED_Pd.png" style="position:absolute;left:5%;top:30%;height:250px"></img>
+    <img class="ED1" src="Bilder/LEED_MEED/MEED.png" style="position:absolute;left:28%;top:30%;height:250px"></img>
+    <img class="ED2" src="Bilder/LEED_MEED/LEED_FePd.png" style="position:absolute;left:65%;top:30%;height:250px"></img>
+
+    <div class="anim-show slide" data-what=".ED1"></div>
+    <div class="anim-show slide" data-what=".ED2"></div>
+</section>
+
+
+<section class="slide">
+	<h2 style="font-size: 28px">Fermi Surface of 1.8ML FePd/Pd(001) vs 1ML Fe/Pd(001)</h2>
+    <span style='color:#000000;font-size:25px;position:absolute;left:21%;top:22%'>1.8 ML FePd/Pd(001)</span>
+    <span style='color:#000000;font-size:25px;position:absolute;left:62%;top:22%'>1 ML Fe/Pd(001)</span>
+    <img src="Bilder/FePd/1ML_Fe/1MLFe_vs_FePd_hv35.png" style="position:absolute;left:10%;width:750px;top:30%"></img>
+    <img src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:86%;height:30px" >
+    <img class="fs1" src="Bilder/FePd/1ML_Fe/1MLFe_vs_FePd_hv35_1.png" style="position:absolute;left:10%;width:750px;top:30%"></img>
+  <div class="anim-show slide" data-what=".fs1"></div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+<section class="slide">
+	<h2>Fermi Surface of 1.8ML FePd/Pd(100)</h2>
+    <span class="compare2" style="font-size: 22px;position:absolute;left:250px;top:140px">Fermi surfaces of Pd, 1.8ML FePd/Pd(100) and Fe</span>
+
+    <span class="compare2" style="font-size: 22px;position:absolute;left:190px;top:180px">Pd</span>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:40%;top:80%;height:30px" >
+
+    <img src="Bilder/FePd/comparison/thinfilms.png" style="position:absolute;left:95px;top:220px;width:750px"></img>
+    <span class="compare4" style="font-size: 22px;position:absolute;left:380px;top:180px">1.8ML FePd/Pd(100)</span>
+    <span class="compare3" style="font-size: 22px;position:absolute;left:730px;top:180px">Fe</span>
+    <img class="compare2" src="Bilder/Pd/Pd_hv55.png" style="position:absolute;left:60px;top:220px;width:250px"></img>
+
+    <img class="compare3" src=Bilder/Fe/Fe_compare.png style="position:absolute;left:600px;top:220px;width:250px" >
+    <img class="compare4" src=Bilder/FePd/hv55.png style="position:absolute;left:330px;top:220px;width:250px" >
+
+
+    <div class="compare3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="compare4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".compare2"></div>
+    <div class="anim-show slide" data-what=".compare3"></div>
+    <div class="anim-show slide" data-what=".compare4"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Broken Time-reversal Symmetry across Fermi Surface</h2>
+    <img src="Bilder/FePd/Tsymm/hv35_up_1.png" style="position:absolute;top:130px;width:239.6px;left:359px"></img>
+    <img  src=Bilder/LUT/gray.png style="position:absolute;left:80%;top:80%;height:30px" >
+    <div class="p1 square" style="position:absolute;top:140px;height:500px;width:4500px"></div>
+    <img class="p1" src=Bilder/LUT/gray.png style="position:absolute;left:85%;top:80%;height:27px" >
+    <img class="p1" style="position:absolute;top:130px;width:257.386px;left:350px" src=Bilder/FePd/Tsymm/hv35_up_2.png>
+    <img class="p2" style="position:absolute;top:120px;width:646.974px;left:168px" src=Bilder/FePd/Tsymm/hv35_up_full.png>
+    <div class="anim-show slide" data-what=".p1"></div>
+    <div class="anim-show slide" data-what=".p2"></div>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Band Hybridizations of 1.8ML FePd/Pd(100) Fermi Surface</h2>
+    <img src="Bilder/FePd/spin/hv35_spin_Ef_Ef0.2.png" style="position:absolute;left:10%;width:750px"></img>
+    <img src="Bilder/spin_axis_small.png" style="position:absolute;width:30px;right:50px;bottom:200px">
+    <img class="mmsp4"src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:100px;right:20px;bottom:50px">
+    <img class="hy1" src="Bilder/FePd/spin/hv35_spin_Ef_Ef0.2_2.png" style="position:absolute;left:10%;width:750px"></img>
+    <img class="hy2" src="Bilder/FePd/spin/hv35_Ef_Ef-0.2_p.png" style="position:absolute;left:10%;width:750px"></img>
+    <img class="hy3" src="Bilder/FePd/hv35_Ef_p.png" style="position:absolute;top:50%;left:10%;width:200px"></img>
+    <img class="hy3" src="Bilder/FePd/hv35_Ef_s.png" style="position:absolute;top:50%;right:10%;width:200px"></img>
+    <img class="hy4" src="Bilder/FePd/spin/hv35_Ef_Ef-0.2_p_2.png" style="position:absolute;left:10%;width:750px"></img>
+    <img class="hy4" src="Bilder/FePd/hv35_Ef_p.png" style="position:absolute;top:50%;left:10%;width:200px"></img>
+    <img class="hy4" src="Bilder/FePd/hv35_Ef_s.png" style="position:absolute;top:50%;right:10%;width:200px"></img>
+    <img class="hy5" src="Bilder/FePd/spin/hv35_Ef_Ef-0.2_p_compare.png" style="position:absolute;top:45%;left:33.5%;width:300px"></img>
+  <div class="anim-show slide" data-what=".hy1"></div>
+  <div class="anim-show slide" data-what=".hy2"></div>
+  <div class="anim-show slide" data-what=".hy3"></div>
+  <div class="anim-show slide" data-what=".hy4"></div>
+  <div class="anim-show slide" data-what=".hy5"></div>
+</section>
+
+
+<section class="slide">
+	<h2 style="font-size: 28px">Spin-resolved Fermi Surfaces</h2>
+    <span style='color:#000000;font-size:25px;position:absolute;left:21%;top:22%'>1.8 ML FePd/Pd(001)</span>
+    <span style='color:#000000;font-size:25px;position:absolute;left:62%;top:22%'>1 ML Fe/Pd(001)</span>
+    <img src="Bilder/spin_axis_small.png" style="position:absolute;width:30px;right:50px;bottom:200px">
+    <img src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:100px;right:20px;bottom:50px">
+    <img src="Bilder/FePd/1ML_Fe/1MLFe_vs_FePd_hv35_spin.png" style="position:absolute;left:10%;width:750px;top:30%"></img>
+</section>
+
+<section class="slide">
+	<h2 style="font-size: 28px">Comparison of Fermi Surfaces</h2>
+    <img src="Bilder/spin_axis_small.png" style="position:absolute;width:30px;right:50px;bottom:200px">
+    <img src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:100px;right:20px;bottom:50px">
+    <img src="Bilder/FePd/comparison/hv35_ppol_Mup.png" style="position:absolute;left:10%;width:750px;top:24%"></img>
+    <img class="comp1" src="Bilder/FePd/comparison/hv35_spol_Mup.png" style="position:absolute;left:10%;width:750px;top:24%"></img>
+    <img src=Bilder/LUT/gray.png style="position:absolute;left:60%;top:86%;height:30px" >
+    <div class="anim-show slide" data-what=".comp1"></div>
+</section>
+
+<section class="slide deck-status-fake-end">
+	<h2 style="font-size: 28px">Comparison of Spin-resolved Fermi Surfaces</h2>
+    <img src="Bilder/spin_axis_small.png" style="position:absolute;width:30px;right:50px;bottom:200px">
+    <img src="Bilder/FePd_spin/spin_lut_scale.png" style="position:absolute;width:100px;right:20px;bottom:50px">
+    <img src="Bilder/FePd/comparison/hv35_ppol_Mup_spin.png" style="position:absolute;left:10%;width:750px;top:24%"></img>
+</section>
+
+
+
+
+
+
+<section class="slide">
+	<h2>Fermi Surface</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es7.png" style="height:360px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>Fermi Surface</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/es9.png" style="height:360px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>Energy Bands of Ferromagnets</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/fm1.png" style="height:350px"></img>
+    </figure>
+    <img class="fm2" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/fm2.png>
+
+    <div class="fm2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="anim-show slide" data-what=".fm2"></div>
+</section>
+
+<section class="slide">
+	<h2>Energy Bands of Hybrid Ferromagnet</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Electronic_structure_of_solids/hybrid1.png" style="height:350px"></img>
+    </figure>
+    <img class="hybrid2" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid2.png>
+    <img class="hybrid3" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid3.png>
+    <img class="hybrid4" style="position:absolute;left:5%;height:350px" src=Bilder/Electronic_structure_of_solids/hybrid4.png>
+
+    <div class="hybrid2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="hybrid3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="hybrid4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="anim-show slide" data-what=".hybrid2"></div>
+    <div class="anim-show slide" data-what=".hybrid3"></div>
+    <div class="anim-show slide" data-what=".hybrid4"></div>
+</section>
+
+<section class="slide">
+	<h2>Calculated Fermi Surface of Pd(100) (LDA+U)</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Pd_FS/Pd_FS_LDA+U_Vf0.65_Wbg.png" style="height:380px"></img>
+    </figure>
+    <figure style="position:absolute;right:10%;">
+       <img src="Bilder/Pd_FS/fcc.png" style="height:300px"></img>
+    </figure>
+    <figure style="position:absolute;right:50%;">
+       <img src="Bilder/Pd_FS/exciting.png" style="height:50px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+    <h2 style="font-size: 25px;position:absolute;top:-30px">Isoenergy Momentum Map of Pd across High Symmetry Points</sub></h2>
+    <figure style="position:absolute;top:15%;left:7%;height:480px">
+	     <img src="Bilder/Pd_isoenergy/direct1.png" style="height:480px"></img>
+    </figure>
+
+    <img class="direct2" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct2.png>
+    <img class="direct3" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct3.png>
+    <img class="direct4" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct4.png>
+    <img class="direct5" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct5.png>
+    <img class="direct6" style="position:absolute;top:15%;left:7%;height:480px" src=Bilder/Pd_isoenergy/direct6.png>
+
+    <div class="direct2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct5" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="direct6" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".direct2"></div>
+    <div class="anim-show slide" data-what=".direct3"></div>
+    <div class="anim-show slide" data-what=".direct4"></div>
+    <div class="anim-show slide" data-what=".direct5"></div>
+    <div class="anim-show slide" data-what=".direct6"></div>
+</section>
+
+<section class="slide">
+	<h2>Periodic Table of Elements</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Periodic_table/ptable1.png" style="height:380px"></img>
+    </figure>
+
+	  <img class="ptable2" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable2.png>
+	  <img class="ptable3" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable3.png>
+	  <img class="ptable5" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable5.png>
+	  <img class="ptable7" style="position:absolute;left:10%;height:380px" src=Bilder/Periodic_table/ptable7.png>
+
+    <div class="ptable2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable5" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="ptable7" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".ptable2"></div>
+    <div class="anim-show slide" data-what=".ptable3"></div>
+    <div class="anim-show slide" data-what=".ptable5"></div>
+    <div class="anim-show slide" data-what=".ptable7"></div>
+
+</section>
+
+<section class="slide">
+    <h2 style="font-size: 25px;position:absolute;top:-50px">Isoenergy Momentum Map across L-point @ h&nu;=55eV</sub></h2>
+    <!--Data -->
+    <figure class="center" style="position:absolute;height:300px;top:80px;left:0px">
+      <figure style="font-size: 15px;position:absolute;width:200px;left:80px">
+        <img src="Bilder/Pd_isoenergy/hv55/p_Ef_140000.jpg" style="width:250px;" class="center">
+
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:285px">
+        <img src="Bilder/Pd_isoenergy/hv55/p_Ef-0,2_180000.jpg" style="width:250px;" class="center">
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:490px">
+        <img src="Bilder/Pd_isoenergy/hv55/p_Ef-0,4_150000.jpg" style="width:520px;" class="center">
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:695px">
+        <img src="Bilder/Pd_isoenergy/hv55/p_Ef-0,6_168000.jpg" style="width:520px;" class="center">
+      </figure>
+    </figure>
+<!--scale -->
+    <figure style="position:absolute;width:286px;left:37px;top:37px">
+      <img src="Bilder/201905/graph_frame_kxky_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:242px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:447px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:652px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+<!--BZoutline -->
+    <figure style="height:300px;position:absolute;top:80px;left:0px;">
+      <figure style="position:absolute;width:200px;left:80px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:285px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:490px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:695px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+    </figure>
+
+    <!--Data -->
+    <figure class="center" style="position:absolute;height:300px;top:300px;left:0px">
+      <figure style="font-size: 15px;position:absolute;width:200px;left:80px">
+        <img src="Bilder/Pd_isoenergy/hv55/s_Ef_70000.jpg" style="width:250px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> </figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:285px">
+        <img src="Bilder/Pd_isoenergy/hv55/s_Ef-0,2_90000.jpg" style="width:250px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.2eV </figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:490px">
+        <img src="Bilder/Pd_isoenergy/hv55/s_Ef-0,4_84000.jpg" style="width:520px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.4eV</figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:695px">
+        <img src="Bilder/Pd_isoenergy/hv55/s_Ef-0,6_93600.jpg" style="width:520px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.6eV </figcaption>
+      </figure>
+    </figure>
+<!--scale -->
+    <figure style="position:absolute;width:286px;left:37px;top:257px">
+      <img src="Bilder/201905/graph_frame_kxky_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:242px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:447px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:652px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+<!--BZoutline -->
+    <figure style="height:300px;position:absolute;top:300px;left:0px;">
+      <figure style="position:absolute;width:200px;left:80px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:285px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:490px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:695px">
+      <img src="Bilder/201905/Rendered FCT-BZ_L_hv75.png" style="width:200px;" class="center">
+      </figure>
+    </figure>
+<!--Rlegend -->
+    <span style='color:#0000ff;font-size:25px;position:absolute;right:5px;top:170px'>p-pol</span>
+    <span style='color:#ff0000;font-size:25px;position:absolute;right:5px;top:380px'>s-pol</span>
+
+  <figure style="position:absolute;width:55px;right:5px;top:220px">
+    <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+  </figure>
+<!--intensity -->
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:75px;top:85px'>I<sub>max</sub>=168000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:75px;top:305px'>I<sub>max</sub>=93600</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:280px;top:85px'>I<sub>max</sub>=150000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:280px;top:305px'>I<sub>max</sub>=84000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:485px;top:85px'>I<sub>max</sub>=180000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:485px;top:305px'>I<sub>max</sub>=90000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:690px;top:85px'>I<sub>max</sub>=140000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:690px;top:305px'>I<sub>max</sub>=70000</span>
+</section>
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+<section class="slide">
+	<h2>Fermi Surface Tomography of Pd(100)</h2>
+<div>
+  <div style="position:absolute;left:373px">
+    <video width="300px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv34-200_RGB_outline_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+  <div style="position:absolute;left:73px">
+    <video width="250px" controls muted loop autoplay>
+      <source src="Bilder/Pd_FS/hv_scan_spol_15fps.mp4" type="video/mp4">
+    </video>
+  </script>
+      </div>
+
+    <figure style="position:absolute;right:5%;top:15%">
+	     <img src="Bilder/Pd/theory/theory.png" style="height:200px"></img>
+    </figure>
+    <figure style="position:absolute;right:5%;top:53%">
+	     <img src="Bilder/Pd/theory/theory2.png" style="height:200px"></img>
+    </figure>
+<!--
+  <div>
+    <figure style="position:absolute;width:300px;right:100px;top:87px">
+      <img src="Bilder/Pd_isoenergy/fct_brillouin_zone_withImage.png" style="width:500px;position:absolute;top:0px;" class="center">
+    </figure>
+  </div>
+-->
+
+    <figure style="position:absolute;width:376px;left:309px;top:123px">
+      <img src="Bilder/Pd_FS/axes_frame_spol.png" style="width:450px;position:absolute;top:0px;">
+    </figure>
+      <span class="kt2" style='color:#000000;font-size:20px;position:absolute;left:15%;top:83%'>Fermi surface tomography via momentum microscopy<br></span>
+      <span class="kt2" style='color:#000000;font-size:15px;position:absolute;right:2%;top:47%'>Theoretical Fermi Surface of Palladium<br></span>
+      <span class="kt2" style='color:#000000;font-size:15px;position:absolute;right:5%;top:86%'>k<sub> z</sub> Projection of Fermi surface<br></span>
+    <!-- <span class="kt2" style='color:#000000;font-size:20px;position:absolute;right:10%;top:83%'> Free electron final states <br>cutting across momentum space.</span> -->
+</div>
+    <figure style="position:absolute;width:65px;left:5%;bottom:10%">
+      <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+    </figure>
+</section>
+
+<section class="slide">
+    <h2 style="font-size: 25px;position:absolute;top:-50px">Isoenergy Momentum Map across X-point @ h&nu;=75eV</sub></h2>
+    <!--Data -->
+    <figure class="center" style="position:absolute;height:300px;top:80px;left:0px">
+      <figure style="font-size: 15px;position:absolute;width:200px;left:80px">
+        <img src="Bilder/Pd_isoenergy/hv75/p_Ef_200000.jpg" style="width:250px;" class="center">
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:285px">
+        <img src="Bilder/Pd_isoenergy/hv75/p_Ef-0,2_500000.jpg" style="width:250px;" class="center">
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:490px">
+        <img src="Bilder/Pd_isoenergy/hv75/p_Ef-0,4_540000.jpg" style="width:520px;" class="center">
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:695px">
+        <img src="Bilder/Pd_isoenergy/hv75/p_Ef-0,6_534000.jpg" style="width:520px;" class="center">
+      </figure>
+    </figure>
+<!--scale -->
+    <figure style="position:absolute;width:286px;left:37px;top:37px">
+      <img src="Bilder/201905/graph_frame_kxky_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:242px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:447px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:652px;top:37px">
+      <img src="Bilder/201905/graph_frame_kx_null_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+<!--BZoutline -->
+    <figure style="height:300px;position:absolute;top:80px;left:0px;">
+      <figure style="position:absolute;width:200px;left:80px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:285px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:490px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:695px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+    </figure>
+
+    <!--Data -->
+    <figure class="center" style="position:absolute;height:300px;top:300px;left:0px">
+      <figure style="font-size: 15px;position:absolute;width:200px;left:80px">
+        <img src="Bilder/Pd_isoenergy/hv75/s_Ef_260000.jpg" style="width:250px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub></figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:285px">
+        <img src="Bilder/Pd_isoenergy/hv75/s_Ef-0,2_470000.jpg" style="width:250px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.2eV </figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:490px">
+        <img src="Bilder/Pd_isoenergy/hv75/s_Ef-0,4_466000.jpg" style="width:520px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.4eV </figcaption>
+      </figure>
+      <figure style="font-size: 15px;position:absolute;width:200px;left:695px">
+        <img src="Bilder/Pd_isoenergy/hv75/s_Ef-0,6_435000.jpg" style="width:520px;" class="center">
+        <figcaption style="position:relative;top:30px;">E<sub>binding</sub> = E<sub>Fermi</sub> - 0.6eV </figcaption>
+      </figure>
+    </figure>
+<!--scale -->
+    <figure style="position:absolute;width:286px;left:37px;top:257px">
+      <img src="Bilder/201905/graph_frame_kxky_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:242px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:447px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+    <figure style="position:absolute;width:286px;left:652px;top:257px">
+      <img src="Bilder/201905/graph_frame_kx_hv75.png" style="width:357px;position:absolute;top:0px;" class="center">
+    </figure>
+<!--BZoutline -->
+    <figure style="height:300px;position:absolute;top:300px;left:0px;">
+      <figure style="position:absolute;width:200px;left:80px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:285px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:490px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+      <figure style="position:absolute;width:200px;left:695px">
+      <img src="Bilder/201905/Rendered FCT-BZ_X_hv75.png" style="width:200px;" class="center">
+      </figure>
+    </figure>
+<!--Rlegend -->
+    <span style='color:#0000ff;font-size:25px;position:absolute;right:5px;top:170px'>p-pol</span>
+    <span style='color:#ff0000;font-size:25px;position:absolute;right:5px;top:380px'>s-pol</span>
+
+  <figure style="position:absolute;width:55px;right:5px;top:220px">
+    <img src="Bilder/Pd_isoenergy/scale.jpg" style="width:200px;" class="center">
+  </figure>
+<!--intensity -->
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:75px;top:85px'>I<sub>max</sub>=534000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:75px;top:305px'>I<sub>max</sub>=435000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:280px;top:85px'>I<sub>max</sub>=540000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:280px;top:305px'>I<sub>max</sub>=466000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:485px;top:85px'>I<sub>max</sub>=500000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:485px;top:305px'>I<sub>max</sub>=470000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:690px;top:85px'>I<sub>max</sub>=200000</span>
+    <span style='color:#ff00ff;font-size:10px;position:absolute;right:690px;top:305px'>I<sub>max</sub>=260000</span>
+</section>
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+
+
+
+<section class="slide">
+	<h2>The Momentum Microscope</h2>
+    <figure style="position:absolute;left:10%;">
+	     <img src="Bilder/Momentum_Microscope/mm1.png" style="height:380px"></img>
+    </figure>
+    <img class="mm2" style="position:absolute;left:10%;height:380px" src=Bilder/Momentum_Microscope/mm2.png>
+	  <img class="mm3" style="position:absolute;left:10%;height:380px" src=Bilder/Momentum_Microscope/mm3.png>
+	  <img class="mm4" style="position:absolute;left:10%;height:380px" src=Bilder/Momentum_Microscope/mm4.png>
+
+    <div class="mm2" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mm3" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+    <div class="mm4" style="position:absolute;right:3%;top:74%;width:460px">
+    </div>
+
+    <div class="anim-show slide" data-what=".mm2"></div>
+    <div class="anim-show slide" data-what=".mm3"></div>
+    <div class="anim-show slide" data-what=".mm4"></div>
+</section>
+
+<section class="slide">
+	<h2>Supplementary</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/supp/supp1.png" style="height:360px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>Supplementary</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/supp/supp2.png" style="height:360px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>Supplementary</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/supp/supp3.png" style="height:360px"></img>
+    </figure>
+</section>
+
+<section class="slide">
+	<h2>Supplementary</h2>
+    <figure style="position:absolute;left:5%;">
+	     <img src="Bilder/Spinfilter/Spin-Streuung.png" style="height:360px"></img>
+    </figure>
+    <img src="Bilder/Spinfilter/FoM-Def.png" style="position:absolute;right:5%;height:200px"></img>
+</section>
+
+
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------------------------->
+
+
+<!-- deck.status snippet -->
+<!-- <p class="deck-status"><span class="deck-status-current"></span> / 10 -->
+<!--    <span class="deck-status-total"></span> -->
+<!-- </p> -->
+
+
+
+
+<!-- cloned pointer will be added automatically by the clone extension, use {snippets: { clone:false }} to not do it (and maybe add your custom one-->
+<!--<div class="clonepointer" style="width:20px; height:20px; background-color:red;"></div>-->
+<div class="clonepointer scale-on-click">
+    <div style="border: 4px solid blue; border-radius: 50%; z-index:10; margin: -15px 0 0 -15px; width:24px; height:24px; opacity: .5;"></div>
+</div>
+<div class="clonepointer scale-on-click">
+    <div style="border: 4px solid blue; border-radius: 50%; z-index:10; margin: -23px 0 0 -23px; width:40px; height:40px;"></div>
+</div>
+
+<!-- deck.navigation snippet -->
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+</div> <!-- end of deck container -->
+
+</body>
+</html>

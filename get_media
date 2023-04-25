@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cat $1 | grep -E -o "src=\"?([[:print:]]*)\.(png|jpg|ogv|mp4)\"?" | sed "s/src=//;s/\"//;s/\"//" | sort | uniq
